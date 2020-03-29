@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>demo-CSS3 3D旋转</title>
+  <style type="text/css">
+    @keyframes spin {
+      0% {
+        transform: rotateY(0deg)
+      }
+
+      100% {
+        transform: rotateY(360deg)
+      }
+    }
+
+    .stage {
+      width: 300px;
+      height: 300px;
+      float: left;
+      margin: 15px;
+      position: relative;
+      background: url(Figure-s/bg-grid.jpg) no-repeat center center;
+      background-size: 100% 100%;
+      perspective: 1200px;
+    }
+
+    .container {
+      position: relative;
+      height: 230px;
+      width: 100px;
+      top: 50%;
+      left: 50%;
+      margin: -100px 0 0 -50px;
+      transform-style: preserve-3d;
+      /* animation:spin 5s linear infinite; */
+    }
+
+    .container:hover {
+      animation: spin 5s linear infinite;
+    }
+
+    .side {
+      font-size: 20px;
+      font-weight: bold;
+      height: 100px;
+      line-height: 100px;
+      color: #fff;
+      position: absolute;
+      text-align: center;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+      text-transform: uppercase;
+      width: 100px;
+    }
+
+    .top {
+      background: #9acc53;
+      transform: rotate(-45deg) skew(15deg, 15deg);
+    }
+
+    .left {
+      background: #8ec63f;
+      transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+    }
+
+    .right {
+      background: #80b239;
+      transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stage s1">
+    <div class="container">
+      <div class="side top">1</div>
+      <div class="side left">2</div>
+      <div class="side right">3</div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<title>demo-径向渐变</title>
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		div {
+			width: 120px;
+			height: 120px;
+			margin: 10px;
+			border-radius: 60px;
+			line-height: 120px;
+			text-align: center;
+			color: #fff;
+		}
+
+		/* at center*/
+		.center.circle {
+			background-image: -webkit-radial-gradient(center, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.center.ellipse {
+			background-image: -webkit-radial-gradient(center, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		/* at top */
+		.top.circle {
+			background-image: -webkit-radial-gradient(top, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.top.ellipse {
+			background-image: -webkit-radial-gradient(top, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		/* at right */
+		.right.circle {
+			background-image: -webkit-radial-gradient(right, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.right.ellipse {
+			background-image: -webkit-radial-gradient(right, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		/* at left */
+		.left.circle {
+			background-image: -webkit-radial-gradient(left, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.left.ellipse {
+			background-image: -webkit-radial-gradient(left, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		/* at bottom */
+		.bottom.circle {
+			background-image: -webkit-radial-gradient(bottom, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.bottom.ellipse {
+			background-image: -webkit-radial-gradient(bottom, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		/* at top left */
+		.top-left.circle {
+			background-image: -webkit-radial-gradient(top left, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		.top-left.ellipse {
+			background-image: -webkit-radial-gradient(top left, rgb(220, 75, 200), rgb(0, 0, 75));
+		}
+
+		div.twenty.circle {
+			width: 300px;
+			height: 300px;
+			border-radius: 100%;
+			background: radial-gradient(20px circle, hsla(220, 89%, 100%, 1), hsla(30, 60%, 60%, .9));
+		}
+
+		div.forty.circle{
+			width: 300px;
+			height: 300px;
+			border-radius: 100%;
+			margin: 50px auto;
+			border: 5px solid hsla(60, 50%, 80%, .8);
+			background: radial-gradient(2em 4em ellipse,
+					hsla(220, 89%, 100%, 1), hsla(30, 60%, 60%, .9));
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center circle">circle center</div>
+	<div class="center ellipse">ellpise center</div>
+	<div class="top circle">circle top</div>
+	<div class="top ellipse">ellipse top</div>
+	<div class="right circle">circle right</div>
+	<div class="right ellipse">ellipse right</div>
+	<div class="left circle">circle left</div>
+	<div class="left ellipse">ellpise left</div>
+	<div class="bottom circle">circle bottom</div>
+	<div class="bottom ellipse">ellipse bottom</div>
+	<div class="top-left circle">circle top-left</div>
+	<div class="top-left ellipse">ellipse top-left</div>
+
+	<div class="twenty circle">twenty circle</div>
+
+	<div class="forty circle">forty circle</div>
+</body>
+</html>

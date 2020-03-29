@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>demo-border-style</title>
+	<style>
+		div {
+      width: 100px;
+			height: 100px;
+			background:orange;
+			margin: 10px;
+			padding: 10px;
+			display: inline-block;
+		}
+		.div1 {
+			border: 10px solid red;
+			-moz-border-top-colors: red yellow green pink lightblue;
+			-moz-border-right-colors: red yellow green pink lightblue;
+			-moz-border-bottom-colors: red yellow green pink lightblue;
+			-moz-border-left-colors: red yellow green pink lightblue;
+		}
+		.div2 {
+			border: 10px groove red;
+		}
+		.div3 {
+			border: 10px ridge red;
+		}
+		.div4 {
+			border: 10px inset red;
+		}
+		.div5 {
+			border: 10px outset red;
+		}
+		.div6 {
+			border: 10px dotted red;
+		}
+		.div7 {
+			border: 10px dashed red;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">double</div>
+	<div class="div2">groove</div>
+	<div class="div3">ridge</div>
+	<div class="div4">inset</div>
+	<div class="div5">outset</div>
+	<div class="div6">dotted</div>
+	<div class="div7">dashed</div>
+</body>
+</html>
